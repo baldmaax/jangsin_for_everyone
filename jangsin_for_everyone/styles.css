@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 0;
+    font-size: 24px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* 화면 높이의 80% 사용 */
+}
+
+/* 기존 CSS 스타일 수정 */
+#toggleButton {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+#toggleButton.active {
+    background-color: #e74c3c; 
+}
+
+#video {
+    display: none; 
+}
